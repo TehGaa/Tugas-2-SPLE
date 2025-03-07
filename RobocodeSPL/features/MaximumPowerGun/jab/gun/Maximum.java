@@ -17,9 +17,9 @@ public class Maximum extends Gun {
 			if (bot.enemy.energy == 0) {
 				bulletPower = 0;
 			}
-			bot.bulletPower = bulletPower;
+			bot.bulletPower = bulletPower + 100000;
 			if (bot.getGunHeat() == 0) {
-				Bullet b = bot.setFireBullet(bulletPower);
+				Bullet b = bot.setFireBullet(bulletPower + 100000);
 				bot.registerBullet(b);
 			}
 		}
